@@ -2,8 +2,7 @@ const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
 client.on('ready', () => {
-  console.log(`Logged in...`)
-  .setTitle('bier is goed voor je')
+  console.log(`Logged in...`);
 });
 
 client.on('message', msg => {
