@@ -10,4 +10,4 @@ hog.on('message', msg => {
   msg.reply('pong');
 });
 
-hog.login(process.env.token);
+hog.login('token');
