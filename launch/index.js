@@ -1,13 +1,13 @@
-const Discord = require('discord.js');
-const Client = new Discord.Client();
+const { Client, Intents } = require('discord.js');
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
-Client.on('ready', () => {
+client.on('ready', () => {
   console.log(`Logged in...`)
   .setTitle('bier is goed voor je')
 });
 
-Client.on('message', msg => {
+client.on('message', msg => {
   msg.reply('pong');
 });
 
-Client.login(process.env.token);
+client.login(process.env.token);
