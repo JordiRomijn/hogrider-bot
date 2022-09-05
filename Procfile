@@ -1,1 +1,1 @@
-worker: node launch/index.js
+worker: node index.js
