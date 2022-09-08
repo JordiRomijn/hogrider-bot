@@ -5,7 +5,7 @@ client.on('ready', () => {
   console.log(`Logged in...`);
 });
 
-client.on('message', msg => {
+client.on("messageCreate", (msg) => {
   if (msg.content == 'ping') {
     msg.reply('Pong!');
   }
