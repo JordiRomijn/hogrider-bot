@@ -46,8 +46,8 @@ Made By: \`Jordi\`\n Discord: \`Jordi#5669\`\n
     )
     .setTimestamp(Date.now());
 
-  if (message.content.startsWith(prefix + "help")) {
-    message.channel.send({ embeds: [help] });
+  if (msg.content.startsWith(prefix + "help")) {
+    msg.channel.send({ embeds: [help] });
   }
 });
 
