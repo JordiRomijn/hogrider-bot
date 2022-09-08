@@ -5,7 +5,7 @@ client.on('ready', () => {
   console.log(`Logged in...`);
 });
 
-if(Message.content == 'bier') {
+if(message.content == 'bier') {
   message.channel.sendMessage('lekker');
 }
 
