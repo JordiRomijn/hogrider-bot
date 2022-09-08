@@ -1,10 +1,7 @@
 const { Client, Intents, MessageEmbed } = require("discord.js");
-const client = new Client({
-  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
-  partials: ["CHANNEL", "MESSAGE", "REACTION"],
-});
+const client = new Client({ intents: Object.values(Intents.FLAGS).reduce((a, b) => a + b) });
 
-const help = require("./help.js");
+// const help = require("./help.js");
 const { prefix } = require("./config.json");
 
 client.on("ready", () => {
