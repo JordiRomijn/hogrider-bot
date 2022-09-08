@@ -6,10 +6,11 @@ client.on('ready', () => {
   console.log(`Logged in...`);
 });
 
-client.on("messageCreate", (message) => {
-  if (message.content.startsWith("bier")) {
-    message.channel.send('bjiwefb');
-}
-});
+client.on('messageCreate', msg => {
+  // You can view the msg object here with console.log(msg)
+   if (msg.content === 'Hello') {
+     msg.reply(`Hello ${msg.author.username}`);
+   }
+  });
 
 client.login(process.env.token);
