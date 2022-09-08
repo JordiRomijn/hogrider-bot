@@ -5,8 +5,4 @@ client.on('ready', () => {
   console.log(`Logged in...`);
 });
 
-client.on('message', msg => {
-  msg.reply('pong');
-});
-
 client.login(process.env.token);
