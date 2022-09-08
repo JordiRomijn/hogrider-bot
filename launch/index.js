@@ -20,7 +20,7 @@ client.on("messageCreate", (msg) => {
   }
 
   if (msg.content.startsWith(prefix + "help")) {
-    msg.channel.send({ embeds: [help] });
+    msg.reply(`Hello ${msg.author.username}`);
   }
 });
 
