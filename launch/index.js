@@ -5,10 +5,10 @@ client.on('ready', () => {
   console.log(`Logged in...`);
 });
 
-client.on("messageCreate", (msg) => {
-  if (msg.content == 'ping') {
-    msg.reply('Pong!');
-  }
+client.on("messageCreate", (message) => {
+  if (message.content.startsWith("bier")) {
+    message.channel.send('bjiwefb')
+}
 });
 
 client.login(process.env.token);
