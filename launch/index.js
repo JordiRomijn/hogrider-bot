@@ -4,10 +4,13 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 
 client.on('ready', () => {
   console.log(`Logged in...`);
+  nuker.user.setActivity("dikke", {
+    type: "STREAMING",
+    url: "https://www.twitch.tv/amouranth"
+  });
 });
 
-client.on('messageCreate', msg => {
-  // You can view the msg object here with console.log(msg)
+client.on('messageCreate', (msg) => {
    if (msg.content === 'Hello') {
      msg.reply(`Hello ${msg.author.username}`);
    }
