@@ -4,8 +4,8 @@ const client = new Client({
   partials: ["CHANNEL", "MESSAGE", "REACTION"],
 });
 
-const help = require("help.js");
-const { prefix } = require("config.json")
+const help = require("./help.js");
+const { prefix } = require("./config.json")
 
 client.on("ready", () => {
   console.log(`Logged in...`);
