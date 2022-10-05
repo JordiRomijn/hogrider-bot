@@ -14,7 +14,7 @@ client.on("ready", () => {
 });
 
 client.on("messageCreate", (msg) => {
-  if (msg.content == "Hello") {
+  if (msg.content === "Hello") {
     msg.channel.send('Hello');
   }
 
