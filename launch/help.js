@@ -1,3 +1,5 @@
+const { MessageEmbed } = require("discord.js");
+
 const help = new MessageEmbed()
 .setDescription(`**Rice Beamer Beta ;**
 \n**Create Channels ;**
