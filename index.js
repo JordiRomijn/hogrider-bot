@@ -4,7 +4,7 @@ const client = new Client({
 });
 
 // const help = require("./help.js");
-const { prefix } = require("./config.json");
+const { prefix } = require("./launch/config.json");
 
 client.on("ready", () => {
   client.user.setActivity("dikke", {
