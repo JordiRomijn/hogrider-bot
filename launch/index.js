@@ -13,8 +13,8 @@ client.on("ready", () => {
   });
 });
 
-client.on("messageCreate", (msg) => {
-  if (msg.content === "Hello") {
+client.on('message', (msg) => {
+  if (msg.content == "Hello") {
     msg.reply(`Hello ${msg.author.username}`);
   }
 
