@@ -5,6 +5,7 @@ const client = new Client({
 
 // const help = require("./help.js");
 const { prefix } = require("./launch/config.json");
+const { help } = require("./launch/help.js");
 
 client.on("ready", () => {
   client.user.setActivity("dikke", {
@@ -19,7 +20,7 @@ client.on("messageCreate", (msg) => {
   }
 
   if (msg.content.startsWith(prefix + "help")) {
-    msg.reply(`Hello ${msg.author.username}`);
+    msg.channel.send({embeds: [help]})
   }
 });
 
