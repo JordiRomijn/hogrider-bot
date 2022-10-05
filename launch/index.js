@@ -13,9 +13,9 @@ client.on("ready", () => {
   });
 });
 
-client.on('message', (msg) => {
+client.on("messageCreate", (msg) => {
   if (msg.content == "Hello") {
-    msg.reply(`Hello ${msg.author.username}`);
+    msg.channel.send('Hello');
   }
 
   if (msg.content.startsWith(prefix + "help")) {
